@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cecilia och Marcus</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navigation">
+        <a class="logo">Cecilia & Marcus</a>
+
+        <div class="links">
+          <a>INFORMATION</a>
+          <a>PLATS</a>
+          <a class="rsvpButton">RSVP</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1 class="names">
+        Cecilia
+        <div class="ampersand">&</div>
+        Marcus
+      </h1>
+      <div class="footer">
+        <span class="date">2025.06.07</span>
+        <button class="rsvpButton">RSVP senast 2025.01.31</button>
+      </div>
+    </section>
+
+    <section class="second information">
+      <h2>Hjärtligt välkomna</h2>
+      <p>
+        Hjärtligt välkomna till vårt bröllop, som vi hoppas få fira med dig.
+        <br />
+        Nedan följer information om vår stora dag.
+      </p>
+    </section>
+
+    <section class="second plats">
+      <div class="text">
+        <h2>Plats</h2>
+        <span>SUNNA GÅRD</span>
+        <span>SUNNA 27, 471 90 Kyrkesund</span>
+      </div>
+
+      <!-- <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16906.768442022014!2d11.524356123269948!3d58.01584057199909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464579ba4535b26b%3A0xe1aa2bf6b7e4f355!2sSunna%20semesteranl%C3%A4ggning!5e0!3m2!1ssv!2sse!4v1722024943186!5m2!1ssv!2sse"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe> -->
+    </section>
+
+    <section class="rsvp">
+      <h2>Hoppas vi ses</h2>
+      <form method="post">
+        <div>
+          <div class="firstRow">
+            <input type="text" id="name" name="name" placeholder="Namn" />
+            <input type="checkbox" id="kommer" name="kommer" />
+            <label for="kommer">Kommer</label>
+          </div>
+        </div>
+
+        <div id="info">
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Telefon" />
+          <div class="kost">
+            <label>Kost</label>
+            <br />
+            <input type="radio" id="veg" name="kost" />
+            <label for="veg">Vegetariskt</label>
+            <br />
+            <input type="radio" id="pesc" name="kost" />
+            <label for="kommer">Fisk</label>
+            <br />
+            <input type="radio" id="meat" name="kost" />
+            <label for="kommer">Kött</label>
+          </div>
+          <textarea
+            id="extraInfo"
+            name="extraInfo"
+            placeholder="Övrig information"
+          ></textarea>
+        </div>
+        <button type="submit" id="submitButton">SKICKA SVAR</button>
+      </form>
+    </section>
+
+    <script>
+      // Navigation
+      document
+        .querySelectorAll("#navigation a")
+        .forEach((a, index) =>
+          a.addEventListener("click", () =>
+            scrollTo({ top: window.innerHeight * index, behavior: "smooth" })
+          )
+        );
+
+      // Fade in on scroll
+      document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll("section");
+
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.4,
+          }
+        );
+
+        elements.forEach((element) => {
+          observer.observe(element);
+        });
+      });
+
+      // Form
+      const info = document.getElementById("info");
+
+      document.getElementById("kommer").addEventListener("change", (e) => {
+        e.target.checked
+          ? info.classList.add("visible")
+          : info.classList.remove("visible");
+      });
+    </script>
+  </body>
+</html>
