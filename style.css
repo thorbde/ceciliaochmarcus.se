@@ -1,7 +1,7 @@
 html {
   scroll-snap-type: y mandatory;
-  --accent-color: #e3c078;
-  --accent-hover: #af955f;
+  --accent-color: #c1a773;
+  --accent-hover: #877551;
   --text-color: #5e5e5e;
 
   scroll-behavior: smooth;

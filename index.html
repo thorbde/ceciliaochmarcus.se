@@ -54,6 +54,7 @@
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
+        name="location"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </section>
@@ -70,8 +71,8 @@
         </div>
 
         <div id="forminfo">
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Telefon" />
+          <input type="email" placeholder="Email" name="email" />
+          <input type="text" placeholder="Telefon" name="phone" />
           <div class="kost">
             <label>Kost</label>
             <br />
@@ -79,10 +80,10 @@
             <label for="veg">Vegetariskt</label>
             <br />
             <input type="radio" id="pesc" name="kost" />
-            <label for="kommer">Fisk</label>
+            <label for="pesc">Fisk</label>
             <br />
             <input type="radio" id="meat" name="kost" />
-            <label for="kommer">Kött</label>
+            <label for="meat">Kött</label>
           </div>
           <textarea
             id="extraInfo"
