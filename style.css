@@ -1,10 +1,16 @@
 html {
   scroll-snap-type: y mandatory;
-  --accent-color: #c1a773;
-  --accent-hover: #877551;
+  --accent-color: #826e45;
+  --accent-hover: #645434;
   --text-color: #5e5e5e;
 
   scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -39,6 +45,7 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
+  margin-right: 0.25rem;
   accent-color: var(--accent-color);
 }
 

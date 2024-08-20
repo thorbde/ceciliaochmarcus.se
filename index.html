@@ -62,18 +62,33 @@
       <form method="post">
         <div>
           <div class="firstRow">
-            <input type="text" id="name" name="name" placeholder="Namn" />
+            <input
+              type="text"
+              id="name"
+              autocomplete="name"
+              name="name"
+              placeholder="Namn"
+            />
             <input type="checkbox" id="kommer" name="kommer" />
             <label for="kommer">Kommer</label>
           </div>
         </div>
 
         <div id="forminfo">
-          <input type="email" placeholder="Email" name="email" />
-          <input type="text" placeholder="Telefon" name="phone" />
+          <input
+            type="email"
+            autocomplete="email"
+            placeholder="Email"
+            name="email"
+          />
+          <input
+            type="text"
+            autocomplete="tel"
+            placeholder="Telefon"
+            name="phone"
+          />
           <div class="kost">
-            <label>Kost</label>
-            <br />
+            <p>Kost</p>
             <input type="radio" id="veg" name="kost" />
             <label for="veg">Vegetariskt</label>
             <br />
