@@ -136,7 +136,7 @@ header {
 */
 
 .hero {
-  background-image: url("public/hero.jpg");
+  background-image: url("public/hero.webp");
   display: flex;
   flex-direction: column;
   align-items: center;
