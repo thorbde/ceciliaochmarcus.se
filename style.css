@@ -227,7 +227,7 @@ header {
       margin-bottom: 1rem;
     }
 
-    #info {
+    #forminfo {
       display: flex;
       flex-direction: column;
       gap: 1rem;
