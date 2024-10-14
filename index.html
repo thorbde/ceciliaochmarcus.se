@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preload" href="public/hero.webp" as="image" type="image/webp" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Cecilia och Marcus</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>C & M</title>
   </head>
+
   <body>
     <header>
       <nav id="navigation">
@@ -20,7 +23,7 @@
       </nav>
     </header>
 
-    <section class="hero" id="hero">
+    <section id="hero">
       <h1 class="names">
         Cecilia
         <div class="ampersand">&</div>
@@ -28,25 +31,122 @@
       </h1>
       <span class="date">2025.06.07</span>
       <div class="footer">
-        <button class="rsvpFooterButton">RSVP senast 2025.01.31</button>
+        <button class="rsvpFooterButton">RSVP senast 2025.01.01</button>
       </div>
     </section>
 
-    <section class="second information" id="info">
-      <h2>Hjärtligt välkomna</h2>
-      <p>
-        Hjärtligt välkomna till vårt bröllop, som vi hoppas få fira med dig.
-        <br />
-        Nedan följer information om vår stora dag.
-      </p>
+    <section id="info">
+      <h2>Toastmadame</h2>
+      <div class="toastmadame">
+        <img src="public/madame.webp" />
+        <div class="text">
+          <div>
+            <h3>Rebecca Hammar Flohr</h3>
+            <span class="email">ceciliaochmarcus@gmail.com</span>
+          </div>
+          <p>
+            Hej! Mitt namn är Rebecca, och jag kommer att vara toastmadame på
+            bröllopet. Hör gärna av er om ni har frågor, eller om ni vill hålla
+            tal på bröllopet. Jag ser fram emot att träffa er!
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section class="second plats" id="location">
-      <div class="text">
-        <h2>Plats</h2>
+    <section id="schedule">
+      <h2>Vår bröllopsdag</h2>
+
+      <ul class="scheduleList">
+        <li class="left">
+          <div class="info">
+            <span>15:00</span>
+            <span>ceremoni</span>
+          </div>
+          <span class="line"></span>
+        </li>
+
+        <li class="vertLine"></li>
+
+        <li></li>
+
+        <li></li>
+
+        <li class="vertLine"></li>
+
+        <li class="right">
+          <span class="line"></span>
+          <div class="info">
+            <span>15.45</span>
+            <span>bubbel</span>
+          </div>
+        </li>
+
+        <li class="left">
+          <div class="info">
+            <span>16:00 - 18:00</span>
+            <span>mingel</span>
+          </div>
+          <span class="line"></span>
+        </li>
+
+        <li class="vertLine"></li>
+
+        <li></li>
+
+        <li></li>
+
+        <li class="vertLine"></li>
+
+        <li class="right">
+          <span class="line"></span>
+          <div class="info">
+            <span>18:00 - 22:00</span>
+            <span>middag</span>
+          </div>
+        </li>
+
+        <li class="left">
+          <div class="info">
+            <span>22:00 - 02:00</span>
+            <span>fest</span>
+          </div>
+          <span class="line"></span>
+        </li>
+
+        <li class="vertLine"></li>
+
+        <li></li>
+
+        <li></li>
+
+        <li class="vertLine"></li>
+
+        <li class="right">
+          <span class="line"></span>
+          <div class="info">
+            <span>02:00 - 04:00</span>
+            <span>efterfest</span>
+          </div>
+        </li>
+
+        <li class="left">
+          <div class="info">
+            <span>10:00</span>
+            <span>frukost</span>
+          </div>
+          <span class="line"></span>
+        </li>
+        <li class="vertLine"></li>
+      </ul>
+    </section>
+
+    <section id="location">
+      <h2>Plats</h2>
+
+      <!-- <div class="text">
         <span>SUNNA GÅRD</span>
         <span>SUNNA 27, 471 90 Kyrkesund</span>
-      </div>
+      </div> -->
 
       <iframe
         width="300"
@@ -58,58 +158,7 @@
       ></iframe>
     </section>
 
-    <section class="rsvp" id="rsvp">
-      <h2>Hoppas vi ses</h2>
-      <form method="post">
-        <div>
-          <div class="firstRow">
-            <input
-              type="text"
-              id="name"
-              autocomplete="name"
-              name="name"
-              placeholder="Namn"
-            />
-            <input type="checkbox" id="kommer" name="kommer" />
-            <label for="kommer">Kommer</label>
-          </div>
-        </div>
-
-        <div id="forminfo">
-          <input
-            type="email"
-            autocomplete="email"
-            placeholder="Email"
-            name="email"
-          />
-          <input
-            type="text"
-            autocomplete="tel"
-            placeholder="Telefon"
-            name="phone"
-          />
-          <div class="kost">
-            <p>Kost</p>
-            <input type="radio" id="veg" name="kost" />
-            <label for="veg">Vegetariskt</label>
-            <br />
-            <input type="radio" id="pesc" name="kost" />
-            <label for="pesc">Fisk</label>
-            <br />
-            <input type="radio" id="meat" name="kost" />
-            <label for="meat">Kött</label>
-          </div>
-          <textarea
-            id="extraInfo"
-            name="extraInfo"
-            placeholder="Övrig information"
-          ></textarea>
-        </div>
-        <button type="submit" id="submitButton">SKICKA SVAR</button>
-      </form>
-    </section>
-
-    <script>
+    <!-- <script>
       // Navigation
       function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
@@ -164,15 +213,6 @@
           observer.observe(element);
         });
       });
-
-      // Form
-      const info = document.getElementById("forminfo");
-
-      document.getElementById("kommer").addEventListener("change", (e) => {
-        e.target.checked
-          ? info.classList.add("visible")
-          : info.classList.remove("visible");
-      });
-    </script>
+    </script> -->
   </body>
 </html>

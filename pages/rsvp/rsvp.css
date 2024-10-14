@@ -1,0 +1,51 @@
+section#rsvp {
+  padding-top: 12rem;
+  form {
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+    gap: 2rem;
+
+    fieldset.name,
+    fieldset.contact {
+      label {
+        display: block;
+      }
+    }
+
+    fieldset.message {
+      text-align: center;
+
+      textarea {
+        width: 80%;
+        min-height: 6rem;
+      }
+    }
+
+    .field.allergies {
+      label {
+        display: block;
+      }
+    }
+
+    text-align: start;
+    legend {
+      font-size: 1.5em;
+      line-height: 3;
+    }
+  }
+
+  #submitButton {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    cursor: pointer;
+
+    transition: background 0.1s;
+  }
+
+  #submitButton:hover {
+    background: var(--accent-hover);
+  }
+}

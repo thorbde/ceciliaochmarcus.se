@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="public/hero.webp" as="image" type="image/webp" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>C & M</title>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navigation">
+        <a class="logo" href="#hero">Cecilia & Marcus</a>
+
+        <div class="links">
+          <a href="#info">INFORMATION</a>
+          <a href="#location">PLATS</a>
+          <a class="rsvpButton" href="#rsvp">RSVP</a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="rsvp">
+      <h2>Hoppas vi ses</h2>
+      <form method="post">
+        <fieldset class="name">
+          <legend>Namn</legend>
+
+          <div class="field firstName">
+            <label for="firstName">Förnamn</label>
+            <input type="text" autocomplete="given-name" name="firstName" />
+          </div>
+
+          <div class="field lastName">
+            <label for="lastName">Efternamn</label>
+            <input type="text" autocomplete="family-name" name="lastName" />
+          </div>
+
+          <div class="field guests">
+            <label for="guests">Gäster</label>
+            <textarea name="guests"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset class="contact">
+          <legend>Kontaktuppgifter</legend>
+
+          <div class="field email">
+            <label for="email">Email</label>
+            <input type="email" autocomplete="email" name="email" />
+          </div>
+
+          <div class="field phone">
+            <label for="phone">Telefon</label>
+            <input type="text" autocomplete="tel" name="phone" />
+          </div>
+        </fieldset>
+
+        <fieldset class="attendance">
+          <legend>Kommer du att delta?</legend>
+
+          <div class="field attending">
+            <div>
+              <input type="radio" id="attending" name="attending" />
+              <label for="attending">Deltar</label>
+            </div>
+            <div>
+              <input type="radio" id="attending" name="attending" />
+              <label for="attending">Deltar inte</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="diet">
+          <legend>Kost</legend>
+
+          <div class="field vegetarian">
+            <input type="radio" id="vegetarian" name="diet" />
+            <label for="vegetarian">Vegetariskt</label>
+          </div>
+
+          <div class="field pescetarian">
+            <input type="radio" id="pescetarian" name="diet" />
+            <label for="pescetarian">Fisk</label>
+          </div>
+
+          <div class="field meat">
+            <input type="radio" id="meat" name="diet" />
+            <label for="meat">Kött</label>
+          </div>
+
+          <div class="field allergies">
+            <label for="allergies">Eventuella allergier</label>
+            <textarea name="allergies"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset class="message">
+          <legend>Övrig information</legend>
+          <textarea name="message"></textarea>
+        </fieldset>
+
+        <button type="submit" id="submitButton">SKICKA SVAR</button>
+      </form>
+    </section>
+  </body>
+</html>
