@@ -182,7 +182,12 @@ section#location {
   background-size: cover;
   background-position: top;
 
+  .map {
+    margin-bottom: 1rem;
+  }
+
   .text {
+    width: 300px;
     text-align: start;
     display: flex;
     flex-direction: column;
