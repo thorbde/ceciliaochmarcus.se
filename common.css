@@ -54,13 +54,13 @@ header {
   padding: 0.8rem 1rem;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   h1 {
     font-size: 7em;
   }
 
   h2 {
-    font-size: 3em;
+    font-size: 4em;
   }
   .logo {
     font-size: 1.2rem;
