@@ -172,6 +172,16 @@ section#schedule {
 }
 
 section#location {
+  color: white;
+
+  background-image: url("public/sunna.jpeg");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
   .text {
     text-align: start;
     display: flex;
