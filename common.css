@@ -46,6 +46,10 @@ h2 {
   margin-bottom: 4rem;
 }
 
+h3 {
+  font-weight: 100;
+}
+
 .logo {
   font-size: 0.8rem;
 }

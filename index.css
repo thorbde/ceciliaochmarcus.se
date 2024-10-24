@@ -66,7 +66,6 @@ section#hero {
   padding-top: 30vh;
 
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -250,6 +249,47 @@ section#location {
     .map {
       width: 700px;
       height: 400px;
+    }
+  }
+}
+
+section#extra {
+  background-image: url("public/place.jpg");
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  h2 {
+    color: white;
+  }
+
+  .parts {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+    max-width: 70vw;
+  }
+
+  .part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.6;
+    max-width: 30rem;
+
+    background: white;
+    outline: 1px solid black;
+    padding: 2rem;
+    outline-offset: -1rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .parts {
+      flex-direction: row;
     }
   }
 }
